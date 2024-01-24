@@ -880,6 +880,7 @@ namespace FTN.Common
             notSettablePropertyIds.Add(ModelCode.BASEVOLTAGE_CONDEQ);
             notSettablePropertyIds.Add(ModelCode.CONDEQ_TERMINAL);
             notSettablePropertyIds.Add(ModelCode.CNODE_TERMINAL);
+            notSettablePropertyIds.Add(ModelCode.CNODECONTAINER_CNODE);
             notSettablePropertyIds.Add(ModelCode.TNODE_CNODE);
         }
 	

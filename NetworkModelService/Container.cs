@@ -11,6 +11,7 @@ using FTN.Common;
 using FTN.Services.NetworkModelService.DataModel.Core;
 using FTN.Services.NetworkModelService.DataModel.Wires;
 using FTN.Services.NetworkModelService.DataModel;
+using FTN.Services.NetworkModelService.DataModel.Topology;
 
 
 namespace FTN.Services.NetworkModelService
@@ -126,20 +127,23 @@ namespace FTN.Services.NetworkModelService
 					io = new BaseVoltage(globalId);
 					break;
 
-				case DMSType.LOCATION:
-					io = new Location(globalId);
+				case DMSType.SWITCH:
+					io = new Switch(globalId);
 					break;
-				case DMSType.POWERTR:
-					io = new PowerTransformer(globalId);
+				case DMSType.TERMINAL:
+					io = new Terminal(globalId);
 					break;
-				case DMSType.POWERTRWINDING:
-					io = new TransformerWinding(globalId);
+				case DMSType.CNODECONTAINER:
+					io = new ConnectivityNodeContainer(globalId);
 					break;
-				case DMSType.WINDINGTEST:
-					io = new WindingTest(globalId);
-					break;			
+				case DMSType.CNODE:
+					io = new ConnectivityNode(globalId);
+					break;
+                case DMSType.TNODE:
+                    io = new TopologicalNode(globalId);
+                    break;
 
-				default:					
+                default:					
 					string message = String.Format("Failed to create entity because specified type ({0}) is not supported.", type);
 					CommonTrace.WriteTrace(CommonTrace.TraceError, message);
 					throw new Exception(message);					
