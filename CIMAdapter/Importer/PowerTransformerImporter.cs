@@ -94,10 +94,11 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 
 			//// import all concrete model types (DMSType enum)
 			ImportBaseVoltages();
-			ImportLocations();
-			ImportPowerTransformers();
-			ImportTransformerWindings();
-			ImportWindingTests();
+			ImportSwitches();
+            ImportTerminals();
+            ImportConnectivityNodeContainers();
+            ImportConnectivityNodes();
+            ImportTopologicalNodes();
 
 			LogManager.Log("Loading elements and creating delta completed.", LogLevel.Info);
 		}
@@ -142,162 +143,202 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 			return rd;
 		}
 		
-		private void ImportLocations()
+		private void ImportSwitches()
 		{
-			SortedDictionary<string, object> cimLocations = concreteModel.GetAllObjectsOfType("FTN.Location");
-			if (cimLocations != null)
-			{
-				foreach (KeyValuePair<string, object> cimLocationPair in cimLocations)
-				{
-					FTN.Location cimLocation = cimLocationPair.Value as FTN.Location;
+            SortedDictionary<string, object> cimSwitches = concreteModel.GetAllObjectsOfType("FTN.Switch");
+            if (cimSwitches != null)
+            {
+                foreach (KeyValuePair<string, object> cimSwitchPair in cimSwitches)
+                {
+					Switch cimSwitch = cimSwitchPair.Value as Switch;
 
-					ResourceDescription rd = CreateLocationResourceDescription(cimLocation);
-					if (rd != null)
-					{
-						delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
-						report.Report.Append("Location ID = ").Append(cimLocation.ID).Append(" SUCCESSFULLY converted to GID = ").AppendLine(rd.Id.ToString());
-					}
-					else
-					{
-						report.Report.Append("Location ID = ").Append(cimLocation.ID).AppendLine(" FAILED to be converted");
-					}
-				}
-				report.Report.AppendLine();
-			}
-		}
+                    ResourceDescription rd = CreateSwitchResourceDescription(cimSwitch);
+                    if (rd != null)
+                    {
+                        delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
+                        report.Report.Append("Switch ID = ").Append(cimSwitch.ID).Append(" SUCCESSFULLY converted to GID = ").AppendLine(rd.Id.ToString());
+                    }
+                    else
+                    {
+                        report.Report.Append("Switch ID = ").Append(cimSwitch.ID).AppendLine(" FAILED to be converted");
+                    }
+                }
+                report.Report.AppendLine();
+            }
+        }
 
-		private ResourceDescription CreateLocationResourceDescription(FTN.Location cimLocation)
-		{
-			ResourceDescription rd = null;
-			if (cimLocation != null)
-			{
-				long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.LOCATION, importHelper.CheckOutIndexForDMSType(DMSType.LOCATION));
-				rd = new ResourceDescription(gid);
-				importHelper.DefineIDMapping(cimLocation.ID, gid);
+        private ResourceDescription CreateSwitchResourceDescription(FTN.Switch cim)
+        {
+            ResourceDescription rd = null;
+            if (cim != null)
+            {
+                long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.SWITCH, importHelper.CheckOutIndexForDMSType(DMSType.SWITCH));
+                rd = new ResourceDescription(gid);
+                importHelper.DefineIDMapping(cim.ID, gid);
 
-				////populate ResourceDescription
-				PowerTransformerConverter.PopulateLocationProperties(cimLocation, rd);
-			}
-			return rd;
-		}
+                ////populate ResourceDescription
+                PowerTransformerConverter.PopulateSwitchProperties(cim, rd, importHelper, report);
+            }
+            return rd;
+        }
 
-		private void ImportPowerTransformers()
-		{
-			SortedDictionary<string, object> cimPowerTransformers = concreteModel.GetAllObjectsOfType("FTN.PowerTransformer");
-			if (cimPowerTransformers != null)
-			{
-				foreach (KeyValuePair<string, object> cimPowerTransformerPair in cimPowerTransformers)
-				{
-					FTN.PowerTransformer cimPowerTransformer = cimPowerTransformerPair.Value as FTN.PowerTransformer;
+        private void ImportTerminals()
+        {
+            SortedDictionary<string, object> cimTerminals = concreteModel.GetAllObjectsOfType("FTN.Terminal");
+            if (cimTerminals != null)
+            {
+                foreach (KeyValuePair<string, object> cimTerminalPair in cimTerminals)
+                {
+                    Terminal cimTerminal = cimTerminalPair.Value as Terminal;
 
-					ResourceDescription rd = CreatePowerTransformerResourceDescription(cimPowerTransformer);
-					if (rd != null)
-					{
-						delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
-						report.Report.Append("PowerTransformer ID = ").Append(cimPowerTransformer.ID).Append(" SUCCESSFULLY converted to GID = ").AppendLine(rd.Id.ToString());
-					}
-					else
-					{
-						report.Report.Append("PowerTransformer ID = ").Append(cimPowerTransformer.ID).AppendLine(" FAILED to be converted");
-					}
-				}
-				report.Report.AppendLine();
-			}
-		}
+                    ResourceDescription rd = CreateTerminalResourceDescription(cimTerminal);
+                    if (rd != null)
+                    {
+                        delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
+                        report.Report.Append("Terminal ID = ").Append(cimTerminal.ID).Append(" SUCCESSFULLY converted to GID = ").AppendLine(rd.Id.ToString());
+                    }
+                    else
+                    {
+                        report.Report.Append("Terminal ID = ").Append(cimTerminal.ID).AppendLine(" FAILED to be converted");
+                    }
+                }
+                report.Report.AppendLine();
+            }
+        }
 
-		private ResourceDescription CreatePowerTransformerResourceDescription(FTN.PowerTransformer cimPowerTransformer)
-		{
-			ResourceDescription rd = null;
-			if (cimPowerTransformer != null)
-			{
-				long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.POWERTR, importHelper.CheckOutIndexForDMSType(DMSType.POWERTR));
-				rd = new ResourceDescription(gid);
-				importHelper.DefineIDMapping(cimPowerTransformer.ID, gid);
+        private ResourceDescription CreateTerminalResourceDescription(FTN.Terminal cim)
+        {
+            ResourceDescription rd = null;
+            if (cim != null)
+            {
+                long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.TERMINAL, importHelper.CheckOutIndexForDMSType(DMSType.TERMINAL));
+                rd = new ResourceDescription(gid);
+                importHelper.DefineIDMapping(cim.ID, gid);
 
-				////populate ResourceDescription
-				PowerTransformerConverter.PopulatePowerTransformerProperties(cimPowerTransformer, rd, importHelper, report);
-			}
-			return rd;
-		}
+                ////populate ResourceDescription
+                PowerTransformerConverter.PopulateTerminalProperties(cim, rd, importHelper, report);
+            }
+            return rd;
+        }
 
-		private void ImportTransformerWindings()
-		{
-			SortedDictionary<string, object> cimTransformerWindings = concreteModel.GetAllObjectsOfType("FTN.TransformerWinding");
-			if (cimTransformerWindings != null)
-			{
-				foreach (KeyValuePair<string, object> cimTransformerWindingPair in cimTransformerWindings)
-				{
-					FTN.TransformerWinding cimTransformerWinding = cimTransformerWindingPair.Value as FTN.TransformerWinding;
+        private void ImportConnectivityNodeContainers()
+        {
+            SortedDictionary<string, object> cimCNCs = concreteModel.GetAllObjectsOfType("FTN.ConnectivityNodeContainer");
+            if (cimCNCs != null)
+            {
+                foreach (KeyValuePair<string, object> cimCNCPair in cimCNCs)
+                {
+                    ConnectivityNodeContainer cimCNC = cimCNCPair.Value as ConnectivityNodeContainer;
 
-					ResourceDescription rd = CreateTransformerWindingResourceDescription(cimTransformerWinding);
-					if (rd != null)
-					{
-						delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
-						report.Report.Append("TransformerWinding ID = ").Append(cimTransformerWinding.ID).Append(" SUCCESSFULLY converted to GID = ").AppendLine(rd.Id.ToString());
-					}
-					else
-					{
-						report.Report.Append("TransformerWinding ID = ").Append(cimTransformerWinding.ID).AppendLine(" FAILED to be converted");
-					}
-				}
-				report.Report.AppendLine();
-			}
-		}
+                    ResourceDescription rd = CreateConnectivityNodeContainerResourceDescription(cimCNC);
+                    if (rd != null)
+                    {
+                        delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
+                        report.Report.Append("ConnectivityNodeContainer ID = ").Append(cimCNC.ID).Append(" SUCCESSFULLY converted to GID = ").AppendLine(rd.Id.ToString());
+                    }
+                    else
+                    {
+                        report.Report.Append("ConnectivityNodeContainer ID = ").Append(cimCNC.ID).AppendLine(" FAILED to be converted");
+                    }
+                }
+                report.Report.AppendLine();
+            }
+        }
 
-		private ResourceDescription CreateTransformerWindingResourceDescription(FTN.TransformerWinding cimTransformerWinding)
-		{
-			ResourceDescription rd = null;
-			if (cimTransformerWinding != null)
-			{
-				long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.POWERTRWINDING, importHelper.CheckOutIndexForDMSType(DMSType.POWERTRWINDING));
-				rd = new ResourceDescription(gid);
-				importHelper.DefineIDMapping(cimTransformerWinding.ID, gid);
+        private ResourceDescription CreateConnectivityNodeContainerResourceDescription(FTN.ConnectivityNodeContainer cim)
+        {
+            ResourceDescription rd = null;
+            if (cim != null)
+            {
+                long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.CNODECONTAINER, importHelper.CheckOutIndexForDMSType(DMSType.CNODECONTAINER));
+                rd = new ResourceDescription(gid);
+                importHelper.DefineIDMapping(cim.ID, gid);
 
-				////populate ResourceDescription
-				PowerTransformerConverter.PopulateTransformerWindingProperties(cimTransformerWinding, rd, importHelper, report);
-			}
-			return rd;
-		}
+                ////populate ResourceDescription
+                PowerTransformerConverter.PopulateConnectivityNodeContainerProperties(cim, rd);
+            }
+            return rd;
+        }
 
-		private void ImportWindingTests()
-		{
-			SortedDictionary<string, object> cimWindingTests = concreteModel.GetAllObjectsOfType("FTN.WindingTest");
-			if (cimWindingTests != null)
-			{
-				foreach (KeyValuePair<string, object> cimWindingTestPair in cimWindingTests)
-				{
-					FTN.WindingTest cimWindingTest = cimWindingTestPair.Value as FTN.WindingTest;
+        private void ImportConnectivityNodes()
+        {
+            SortedDictionary<string, object> cimCNodes = concreteModel.GetAllObjectsOfType("FTN.ConnectivityNode");
+            if (cimCNodes != null)
+            {
+                foreach (KeyValuePair<string, object> cimCNodePair in cimCNodes)
+                {
+                    ConnectivityNode cimCNode = cimCNodePair.Value as ConnectivityNode;
 
-					ResourceDescription rd = CreateWindingTestResourceDescription(cimWindingTest);
-					if (rd != null)
-					{
-						delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
-						report.Report.Append("WindingTest ID = ").Append(cimWindingTest.ID).Append(" SUCCESSFULLY converted to GID = ").AppendLine(rd.Id.ToString());
-					}
-					else
-					{
-						report.Report.Append("WindingTest ID = ").Append(cimWindingTest.ID).AppendLine(" FAILED to be converted");
-					}
-				}
-				report.Report.AppendLine();
-			}
-		}
+                    ResourceDescription rd = CreateConnectivityNodeResourceDescription(cimCNode);
+                    if (rd != null)
+                    {
+                        delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
+                        report.Report.Append("ConnectivityNode ID = ").Append(cimCNode.ID).Append(" SUCCESSFULLY converted to GID = ").AppendLine(rd.Id.ToString());
+                    }
+                    else
+                    {
+                        report.Report.Append("ConnectivityNode ID = ").Append(cimCNode.ID).AppendLine(" FAILED to be converted");
+                    }
+                }
+                report.Report.AppendLine();
+            }
+        }
 
-		private ResourceDescription CreateWindingTestResourceDescription(FTN.WindingTest cimWindingTest)
-		{
-			ResourceDescription rd = null;
-			if (cimWindingTest != null)
-			{
-				long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.WINDINGTEST, importHelper.CheckOutIndexForDMSType(DMSType.WINDINGTEST));
-				rd = new ResourceDescription(gid);
-				importHelper.DefineIDMapping(cimWindingTest.ID, gid);
+        private ResourceDescription CreateConnectivityNodeResourceDescription(FTN.ConnectivityNode cim)
+        {
+            ResourceDescription rd = null;
+            if (cim != null)
+            {
+                long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.CNODE, importHelper.CheckOutIndexForDMSType(DMSType.CNODE));
+                rd = new ResourceDescription(gid);
+                importHelper.DefineIDMapping(cim.ID, gid);
 
-				////populate ResourceDescription
-				PowerTransformerConverter.PopulateWindingTestProperties(cimWindingTest, rd, importHelper, report);
-			}
-			return rd;
-		}
-		#endregion Import
-	}
+                ////populate ResourceDescription
+                PowerTransformerConverter.PopulateConnectivityNodeProperties(cim, rd, importHelper, report);
+            }
+            return rd;
+        }
+
+        private void ImportTopologicalNodes()
+        {
+            SortedDictionary<string, object> cimTNodes = concreteModel.GetAllObjectsOfType("FTN.TopologicalNode");
+            if (cimTNodes != null)
+            {
+                foreach (KeyValuePair<string, object> cimTNodePair in cimTNodes)
+                {
+                    TopologicalNode cimTNode = cimTNodePair.Value as TopologicalNode;
+
+                    ResourceDescription rd = CreateTopologicalNodeResourceDescription(cimTNode);
+                    if (rd != null)
+                    {
+                        delta.AddDeltaOperation(DeltaOpType.Insert, rd, true);
+                        report.Report.Append("TopologicalNode ID = ").Append(cimTNode.ID).Append(" SUCCESSFULLY converted to GID = ").AppendLine(rd.Id.ToString());
+                    }
+                    else
+                    {
+                        report.Report.Append("TopologicalNode ID = ").Append(cimTNode.ID).AppendLine(" FAILED to be converted");
+                    }
+                }
+                report.Report.AppendLine();
+            }
+        }
+
+        private ResourceDescription CreateTopologicalNodeResourceDescription(FTN.TopologicalNode cim)
+        {
+            ResourceDescription rd = null;
+            if (cim != null)
+            {
+                long gid = ModelCodeHelper.CreateGlobalId(0, (short)DMSType.TNODE, importHelper.CheckOutIndexForDMSType(DMSType.TNODE));
+                rd = new ResourceDescription(gid);
+                importHelper.DefineIDMapping(cim.ID, gid);
+
+                ////populate ResourceDescription
+                PowerTransformerConverter.PopulateTopologicalNodeProperties(cim, rd);
+            }
+            return rd;
+        }
+
+        #endregion Import
+    }
 }
 
