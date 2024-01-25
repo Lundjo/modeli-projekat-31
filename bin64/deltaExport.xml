@@ -1,0 +1,92 @@
+﻿<delta id="0">
+  <operations>
+    <operation type="insert">
+      <ResourceDescriptions count="9">
+        <ResourceDescription>
+          <id gid="0x00000004ffffffff" type="BASEVOLTAGE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="BV_1" />
+            <Property id="IDOBJ_NAME" value="PrimaryVoltage" />
+            <Property id="IDOBJ_ALIASNAME" value="Primary Voltage Transformer" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffe" type="BASEVOLTAGE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="BV_2" />
+            <Property id="IDOBJ_NAME" value="SecondaryVoltage" />
+            <Property id="IDOBJ_ALIASNAME" value="Secondary Voltage Transformer" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006ffffffff" type="SWITCH" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SW_1" />
+            <Property id="IDOBJ_NAME" value="Switch 1" />
+            <Property id="IDOBJ_ALIASNAME" value="Switch Kovin" />
+            <Property id="EQUIPMENT_AGGREGATE" value="1" />
+            <Property id="EQUIPMENT_NORMALLYINSERVICE" value="1" />
+            <Property id="CONDEQ_BASEVOLTAGE" value="0x00000004fffffffe" />
+            <Property id="SWITCH_NORMALOPEN" value="1" />
+            <Property id="SWITCH_RATEDCURRENT" value="5.5" />
+            <Property id="SWITCH_RETAINED" value="1" />
+            <Property id="SWITCH_ONCOUNT" value="5" />
+            <Property id="SWITCH_ONDATE" value="638385732000000000" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006fffffffe" type="SWITCH" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SW_2" />
+            <Property id="IDOBJ_NAME" value="Switch 2" />
+            <Property id="IDOBJ_ALIASNAME" value="Switch Danijela" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001ffffffff" type="TNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TN_1" />
+            <Property id="IDOBJ_NAME" value="Topological Node" />
+            <Property id="IDOBJ_ALIASNAME" value="Topological Node Kovin" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003ffffffff" type="CNODECONTAINER" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="NC_1" />
+            <Property id="IDOBJ_NAME" value="Container" />
+            <Property id="IDOBJ_ALIASNAME" value="CNC" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002ffffffff" type="CNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="CN_1" />
+            <Property id="IDOBJ_NAME" value="Connectivity Node" />
+            <Property id="IDOBJ_ALIASNAME" value="Connectivity Node Kovin" />
+            <Property id="CNODE_TNODE" value="0x00000001ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002fffffffe" type="CNODE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="CN_2" />
+            <Property id="IDOBJ_NAME" value="Connectivity Node 2" />
+            <Property id="IDOBJ_ALIASNAME" value="Connectivity Node Danijel" />
+            <Property id="CNODE_CNODECONTAINER" value="0x00000003ffffffff" />
+            <Property id="CNODE_TNODE" value="0x00000001ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005ffffffff" type="TERMINAL" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="TR_1" />
+            <Property id="IDOBJ_NAME" value="Terminal" />
+            <Property id="IDOBJ_ALIASNAME" value="Terminal Danijelov" />
+            <Property id="TERMINAL_CNODE" value="0x00000002ffffffff" />
+          </Properties>
+        </ResourceDescription>
+      </ResourceDescriptions>
+    </operation>
+  </operations>
+</delta>

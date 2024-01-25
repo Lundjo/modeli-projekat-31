@@ -1,0 +1,6 @@
+C:\modeli\modeli-projekat-31\bin64\FTN.Common.dll
+C:\modeli\modeli-projekat-31\bin64\FTN.Common.pdb
+C:\modeli\modeli-projekat-31\Common\obj\x64\Debug\Common.csproj.AssemblyReference.cache
+C:\modeli\modeli-projekat-31\Common\obj\x64\Debug\Common.csproj.CoreCompileInputs.cache
+C:\modeli\modeli-projekat-31\Common\obj\x64\Debug\FTN.Common.dll
+C:\modeli\modeli-projekat-31\Common\obj\x64\Debug\FTN.Common.pdb

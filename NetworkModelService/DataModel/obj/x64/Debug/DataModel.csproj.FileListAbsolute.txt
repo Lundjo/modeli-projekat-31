@@ -23,3 +23,10 @@ D:\Vezbe\10\ModelLabs\bin64\FTN.DataModel.pdb
 D:\Vezbe\10\ModelLabs\NetworkModelService\DataModel\obj\x64\Debug\ResolveAssemblyReference.cache
 D:\Vezbe\10\ModelLabs\NetworkModelService\DataModel\obj\x64\Debug\FTN.DataModel.dll
 D:\Vezbe\10\ModelLabs\NetworkModelService\DataModel\obj\x64\Debug\FTN.DataModel.pdb
+C:\modeli\modeli-projekat-31\bin64\FTN.DataModel.dll
+C:\modeli\modeli-projekat-31\bin64\FTN.DataModel.pdb
+C:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\DataModel.csproj.AssemblyReference.cache
+C:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\DataModel.csproj.CoreCompileInputs.cache
+C:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\DataModel.csproj.CopyComplete
+C:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\FTN.DataModel.dll
+C:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\FTN.DataModel.pdb

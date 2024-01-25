@@ -1,0 +1,7 @@
+C:\modeli\modeli-projekat-31\bin64\FTN.ESI.SIMES.CIM.CIMAdapter.dll
+C:\modeli\modeli-projekat-31\bin64\FTN.ESI.SIMES.CIM.CIMAdapter.pdb
+C:\modeli\modeli-projekat-31\CIMAdapter\obj\x64\Debug\CIMAdapter.csproj.AssemblyReference.cache
+C:\modeli\modeli-projekat-31\CIMAdapter\obj\x64\Debug\CIMAdapter.csproj.CoreCompileInputs.cache
+C:\modeli\modeli-projekat-31\CIMAdapter\obj\x64\Debug\CIMAdapter.csproj.CopyComplete
+C:\modeli\modeli-projekat-31\CIMAdapter\obj\x64\Debug\FTN.ESI.SIMES.CIM.CIMAdapter.dll
+C:\modeli\modeli-projekat-31\CIMAdapter\obj\x64\Debug\FTN.ESI.SIMES.CIM.CIMAdapter.pdb

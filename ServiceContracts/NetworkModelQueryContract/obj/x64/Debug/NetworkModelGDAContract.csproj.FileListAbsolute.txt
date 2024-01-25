@@ -1,0 +1,7 @@
+C:\modeli\modeli-projekat-31\bin64\FTN.ServiceContracts.ServiceContracts.NetworkModelQueryContract.dll
+C:\modeli\modeli-projekat-31\bin64\FTN.ServiceContracts.ServiceContracts.NetworkModelQueryContract.pdb
+C:\modeli\modeli-projekat-31\ServiceContracts\NetworkModelQueryContract\obj\x64\Debug\NetworkModelGDAContract.csproj.AssemblyReference.cache
+C:\modeli\modeli-projekat-31\ServiceContracts\NetworkModelQueryContract\obj\x64\Debug\NetworkModelGDAContract.csproj.CoreCompileInputs.cache
+C:\modeli\modeli-projekat-31\ServiceContracts\NetworkModelQueryContract\obj\x64\Debug\NetworkModelGDAContract.csproj.CopyComplete
+C:\modeli\modeli-projekat-31\ServiceContracts\NetworkModelQueryContract\obj\x64\Debug\FTN.ServiceContracts.ServiceContracts.NetworkModelQueryContract.dll
+C:\modeli\modeli-projekat-31\ServiceContracts\NetworkModelQueryContract\obj\x64\Debug\FTN.ServiceContracts.ServiceContracts.NetworkModelQueryContract.pdb

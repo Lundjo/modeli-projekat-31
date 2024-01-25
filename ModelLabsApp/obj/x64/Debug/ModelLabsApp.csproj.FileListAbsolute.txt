@@ -1,1 +1,12 @@
 D:\Vezbe\11\ModelLabs\bin64\ModelLabsApp.exe.config
+C:\modeli\modeli-projekat-31\bin64\ModelLabsApp.exe.config
+C:\modeli\modeli-projekat-31\bin64\ModelLabsApp.exe
+C:\modeli\modeli-projekat-31\bin64\ModelLabsApp.pdb
+C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csproj.AssemblyReference.cache
+C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.ModelLabsAppForm.resources
+C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.Properties.Resources.resources
+C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csproj.GenerateResource.cache
+C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csproj.CoreCompileInputs.cache
+C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csproj.CopyComplete
+C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.exe
+C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.pdb

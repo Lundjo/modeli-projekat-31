@@ -1,0 +1,69 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15#"
+         xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
+
+    <cim:BaseVoltage rdf:ID="BV_1">
+        <cim:IdentifiedObject.name>PrimaryVoltage</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.mRID>BV_1</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.aliasName>Primary Voltage Transformer</cim:IdentifiedObject.aliasName>
+    </cim:BaseVoltage>
+    <cim:BaseVoltage rdf:ID="BV_2">
+        <cim:IdentifiedObject.name>SecondaryVoltage</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.mRID>BV_2</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.aliasName>Secondary Voltage Transformer</cim:IdentifiedObject.aliasName>
+    </cim:BaseVoltage>
+
+    <cim:TopologicalNode rdf:ID="TN_1">
+        <cim:IdentifiedObject.name>Topological Node</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.mRID>TN_1</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.aliasName>Topological Node Kovin</cim:IdentifiedObject.aliasName>
+    </cim:TopologicalNode>
+
+    <cim:ConnectivityNode rdf:ID="CN_1">
+        <cim:IdentifiedObject.name>Connectivity Node</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.mRID>CN_1</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.aliasName>Connectivity Node Kovin</cim:IdentifiedObject.aliasName>
+        <cim:ConnectivityNode.TopologicalNode rdf:resource="TN_1"/>
+    </cim:ConnectivityNode>
+
+    <cim:ConnectivityNode rdf:ID="CN_2">
+        <cim:IdentifiedObject.name>Connectivity Node 2</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.mRID>CN_2</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.aliasName>Connectivity Node Danijel</cim:IdentifiedObject.aliasName>
+        <cim:ConnectivityNode.TopologicalNode rdf:resource="TN_1"/>
+        <cim:ConnectivityNode.ConnectivityNodeContainer rdf:resource="NC_1"/>
+    </cim:ConnectivityNode>
+
+    <cim:Terminal rdf:ID="TR_1">
+        <cim:IdentifiedObject.name>Terminal</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.mRID>TR_1</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.aliasName>Terminal Danijelov</cim:IdentifiedObject.aliasName>
+        <cim:Terminal.ConnectivityNode rdf:resource="CN_1"/>
+    </cim:Terminal>
+
+    <cim:Switch rdf:ID="SW_1">
+        <cim:IdentifiedObject.name>Switch 1</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.mRID>SW_1</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.aliasName>Switch Kovin</cim:IdentifiedObject.aliasName>
+        <cim:Equipment.aggregate>true</cim:Equipment.aggregate>
+        <cim:Equipment.normallyInService>true</cim:Equipment.normallyInService>
+        <cim:Switch.normalOpen>true</cim:Switch.normalOpen>
+        <cim:Switch.ratedCurrent>5.5</cim:Switch.ratedCurrent>
+        <cim:Switch.retained>true</cim:Switch.retained>
+        <cim:Switch.switchOnCount>5</cim:Switch.switchOnCount>
+        <cim:Switch.switchOnDate>2023-12-19T08:00:00Z</cim:Switch.switchOnDate>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="BV_2"/>
+    </cim:Switch>
+
+    <cim:Switch rdf:ID="SW_2">
+        <cim:IdentifiedObject.name>Switch 2</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.mRID>SW_2</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.aliasName>Switch Danijela</cim:IdentifiedObject.aliasName>
+    </cim:Switch>
+
+    <cim:ConnectivityNodeContainer rdf:ID="NC_1">
+        <cim:IdentifiedObject.name>Container</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.mRID>NC_1</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.aliasName>CNC</cim:IdentifiedObject.aliasName>
+    </cim:ConnectivityNodeContainer>
+</rdf:RDF>

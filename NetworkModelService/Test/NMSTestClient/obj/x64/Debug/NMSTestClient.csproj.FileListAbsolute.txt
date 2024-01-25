@@ -10,3 +10,11 @@ D:\Vezbe\10\ModelLabs\bin64\NMSTestClient.pdb
 D:\Vezbe\10\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\ResolveAssemblyReference.cache
 D:\Vezbe\10\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.exe
 D:\Vezbe\10\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.pdb
+C:\modeli\modeli-projekat-31\bin64\NMSTestClient.exe.config
+C:\modeli\modeli-projekat-31\bin64\NMSTestClient.exe
+C:\modeli\modeli-projekat-31\bin64\NMSTestClient.pdb
+C:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.csproj.AssemblyReference.cache
+C:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.csproj.CoreCompileInputs.cache
+C:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.csproj.CopyComplete
+C:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.exe
+C:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.pdb
