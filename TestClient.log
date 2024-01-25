@@ -1,3 +1,17 @@
 25.01.2024. 17:23:59 : Network Model Service Test Client is up and running...
 25.01.2024. 17:23:59 : Result directory: ../Results
 25.01.2024. 17:24:07 : Network Model Service Test Client stopped.
+25.01.2024. 18:56:49 : Network Model Service Test Client is up and running...
+25.01.2024. 18:56:49 : Result directory: ../Results
+25.01.2024. 18:57:25 : Getting extent values method started.
+25.01.2024. 18:57:25 : Getting extent values method successfully finished.
+25.01.2024. 18:58:06 : Getting values method started.
+25.01.2024. 18:58:06 : Getting values method successfully finished.
+25.01.2024. 19:00:10 : Network Model Service Test Client is up and running...
+25.01.2024. 19:00:10 : Result directory: ../Results
+25.01.2024. 19:00:53 : Getting extent values method started.
+25.01.2024. 19:00:53 : Getting extent values method successfully finished.
+25.01.2024. 19:03:24 : Getting related values method started.
+25.01.2024. 19:03:24 : Getting related values method  failed for sourceGlobalId = 21474836481 and association (propertyId = 8589934593, type = CNODE). Reason: There was an error while trying to serialize parameter http://tempuri.org/:association. The InnerException message was 'Enum value '8589934593' is invalid for type 'FTN.Common.ModelCode' and cannot be serialized. Ensure that the necessary enum values are present and are marked with EnumMemberAttribute attribute if the type has DataContractAttribute attribute.'.  Please see InnerException for more details.
+25.01.2024. 19:04:50 : Getting related values method started.
+25.01.2024. 19:04:50 : Getting related values method successfully finished.

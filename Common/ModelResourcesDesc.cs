@@ -867,8 +867,9 @@ namespace FTN.Common
 		private void InitializeTypeIdsInInsertOrder()
 		{
 			typeIdsInInsertOrder.Add(ModelCode.TNODE);
-            typeIdsInInsertOrder.Add(ModelCode.CNODE);
             typeIdsInInsertOrder.Add(ModelCode.CNODECONTAINER);
+            typeIdsInInsertOrder.Add(ModelCode.CNODE);
+            
             typeIdsInInsertOrder.Add(ModelCode.BASEVOLTAGE);
             typeIdsInInsertOrder.Add(ModelCode.TERMINAL);
             typeIdsInInsertOrder.Add(ModelCode.SWITCH);
