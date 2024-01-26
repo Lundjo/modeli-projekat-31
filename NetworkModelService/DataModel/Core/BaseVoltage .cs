@@ -68,8 +68,11 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 			{
 				case ModelCode.BASEVOLTAGE_CONDEQ:
 					prop.SetValue(conductingEquipments);
-					break;				
-			}
+					break;
+                default:
+                    base.GetProperty(prop);
+                    break;
+            }
 		}
 
 		public override void SetProperty(Property property)

@@ -58,6 +58,9 @@ namespace FTN.Services.NetworkModelService.DataModel.Topology
                 case ModelCode.TNODE_CNODE:
                     prop.SetValue(cNodes);
                     break;
+                default:
+                    base.GetProperty(prop);
+                    break;
             }
         }
 
