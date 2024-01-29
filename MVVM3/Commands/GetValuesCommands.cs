@@ -25,8 +25,6 @@ namespace MVVM3.Commands
         // Method to get gids per dms model code
         public ObservableCollection<long> GetGIDs(DMSType modelCode)
         {
-            Messenger.Default.Send(new StatusMessage("Getting global identificators method started", "SteelBlue"));
-
             int iteratorId = 0;
             List<long> ids = new List<long>();
 
@@ -54,12 +52,10 @@ namespace MVVM3.Commands
 
                 Proxy.IteratorClose(iteratorId);
 
-                Messenger.Default.Send(new StatusMessage("Getting extent values for " + modelCode + " method successfully finished. Fetched " + ids.Count + " samples.", "SeaGreen"));
             }
             catch (Exception e)
             {
-                string message = string.Format("Getting extent values method failed for {0}. {1}", modelCode, e.Message);
-                Messenger.Default.Send(new StatusMessage(message, "Firebrick"));
+                
             }
 
             ObservableCollection<long> gids = new ObservableCollection<long>(ids);
@@ -263,18 +259,13 @@ namespace MVVM3.Commands
 
                             break;
                         default:
-                            Messenger.Default.Send(new StatusMessage("Service can't fetch values right now!", "Firebrick"));
                             break;
                     }
                 }
-
-                Messenger.Default.Send(new StatusMessage("Get values method fetched " + data.Count + " " +
-                                         (data.Count <= 1 ? "property" : "properties") + " from service.", "SteelBlue"));
                 return data;
             }
             catch (Exception)
             {
-                Messenger.Default.Send(new StatusMessage("Service can't fetch values right now!", "Firebrick"));
                 return new ObservableCollection<PropertyView>();
             }
         }

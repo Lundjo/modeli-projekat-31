@@ -55,7 +55,6 @@ namespace MVVM3.Commands
             {
                 if (xml_path == "")
                 {
-                    Messenger.Default.Send(new StatusMessage("You must choose valid CIM/XML file!", "Firebrick"));
                     return;
                 }
 
@@ -78,7 +77,6 @@ namespace MVVM3.Commands
             }
             catch (Exception e)
             {
-                Messenger.Default.Send(new StatusMessage(String.Format("An error occurred. {0}", e.Message), "Firebrick"));
             }
         }
 
@@ -91,16 +89,10 @@ namespace MVVM3.Commands
                 {
                     string log = adapter.ApplyUpdates(nmsDelta);
                     nmsDelta = null;
-                    Messenger.Default.Send(new StatusMessage("Import & Apply Delta has been completed succesfully!", "SteelBlue"));
                 }
                 catch (Exception e)
                 {
-                    Messenger.Default.Send(new StatusMessage(String.Format("An error occurred. {0}", e.Message), "Firebrick"));
                 }
-            }
-            else
-            {
-                Messenger.Default.Send(new StatusMessage("No data is imported into delta object.", "Firebrick"));
             }
         }
         #endregion

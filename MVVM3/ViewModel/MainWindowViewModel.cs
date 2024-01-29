@@ -11,9 +11,6 @@ namespace MVVM3.ViewModel
         public MyICommand<Window> CloseWindowCommand { get; private set; }
         public MyICommand<string> NavCommand { get; private set; }
 
-        private string statusMessage = "GDA Client is ready. All systems are operative!";
-        private string backgroundColor = "SteelBlue";
-
         /// View Models
         public HomeViewModel homeViewModel;
         public GetValuesViewModel getValuesViewModel;
@@ -34,45 +31,7 @@ namespace MVVM3.ViewModel
             getRelatedValuesViewModel = new GetRelatedValuesViewModel();
             CurrentViewModel = homeViewModel;
 
-            // Register method to show message on status bar
-            Messenger.Default.Register<StatusMessage>(this, SetMessage);
-
             CloseWindowCommand = new MyICommand<Window>(CloseWindow);
-        }
-
-        public string StatusMessage
-        {
-            get { return statusMessage; }
-            set
-            {
-                if (statusMessage != value)
-                {
-                    statusMessage = value;
-                    OnPropertyChanged("StatusMessage");
-                }
-            }
-        }
-
-        public string BackgroundColor
-        {
-            get { return backgroundColor; }
-            set
-            {
-                if (backgroundColor != value)
-                {
-                    backgroundColor = value;
-                    OnPropertyChanged("BackgroundColor");
-                }
-            }
-        }
-
-        public void SetMessage(StatusMessage message)
-        {
-            if(message != null)
-            {
-                StatusMessage = message.Message;
-                BackgroundColor = message.Background_Color;
-            }
         }
 
         public BindableBase CurrentViewModel

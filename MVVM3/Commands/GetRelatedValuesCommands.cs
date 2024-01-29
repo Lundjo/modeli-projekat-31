@@ -25,8 +25,6 @@ namespace MVVM3.Commands
         // Method to get gids per dms model code
         public ObservableCollection<long> GetGIDs(DMSType modelCode)
         {
-            Messenger.Default.Send(new StatusMessage("Getting global identificators method started", "SteelBlue"));
-
             int iteratorId = 0;
             List<long> ids = new List<long>();
 
@@ -53,13 +51,10 @@ namespace MVVM3.Commands
                 }
 
                 Proxy.IteratorClose(iteratorId);
-
-                Messenger.Default.Send(new StatusMessage("Getting extent values for " + modelCode + " method successfully finished. Fetched " + ids.Count + " samples.", "SeaGreen"));
             }
             catch (Exception e)
             {
-                string message = string.Format("Getting extent values method failed for {0}. {1}", modelCode, e.Message);
-                Messenger.Default.Send(new StatusMessage(message, "Firebrick"));
+                
             }
 
             ObservableCollection<long> gids = new ObservableCollection<long>(ids);
@@ -70,8 +65,6 @@ namespace MVVM3.Commands
         // Method to get by values
         public ObservableCollection<PropertiesView> GetRelatedValues(long globalId, List<ModelCode> props, Association association, ModelCode requestedEntityType)
         {
-            Messenger.Default.Send(new StatusMessage("Getting related values method started", "SteelBlue"));
-
             int iteratorId = 0;
             List<long> ids = new List<long>();
             ObservableCollection<PropertiesView> data = new ObservableCollection<PropertiesView>();
@@ -103,13 +96,9 @@ namespace MVVM3.Commands
                     List<PropertyView> entity = new GetValuesCommands().GetValues(gid, props).ToList();
                     data.Add(new PropertiesView() { ParentElementName = requestedEntityType, Properties = entity });
                 }
-
-                Messenger.Default.Send(new StatusMessage("Getting related values for " + requestedEntityType.ToString() + " method successfully finished. Fetched " + ids.Count + " samples.", "SeaGreen"));
-
             }
             catch (Exception)
             {
-                Messenger.Default.Send(new StatusMessage("Service can't fetch related values right now!", "Firebrick"));
             }
 
             return data;

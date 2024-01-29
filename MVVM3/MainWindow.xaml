@@ -96,11 +96,5 @@
             </Grid>
             <ContentControl Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Content="{Binding CurrentViewModel}"/>
         </Grid>
-        <!-- Status Bar -->
-        <StatusBar Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="{Binding Path=BackgroundColor}" Foreground="WhiteSmoke" FontSize="14">
-            <StatusBarItem>
-                <TextBlock Margin="10,0,0,0" Text="{Binding Path=StatusMessage}" />
-            </StatusBarItem>
-        </StatusBar>
     </Grid>
 </Window>

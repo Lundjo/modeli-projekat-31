@@ -25,8 +25,6 @@ namespace MVVM3.Commands
 
         public ObservableCollection<PropertiesView> GetExtentValues(DMSType dmsModelCode, List<ModelCode> props)
         {
-            Messenger.Default.Send(new StatusMessage("Getting extent values method started", "SteelBlue"));
-
             int iteratorId = 0;
             List<long> ids = new List<long>();
             ObservableCollection<PropertiesView> data = new ObservableCollection<PropertiesView>();
@@ -63,12 +61,10 @@ namespace MVVM3.Commands
                     data.Add(new PropertiesView() { ParentElementName = modelCode, Properties = entity });
                 }
 
-                Messenger.Default.Send(new StatusMessage("Getting extent values for " + modelCode + " method successfully finished. Fetched " + ids.Count + " samples.", "SeaGreen"));
-
             }
             catch (Exception)
             {
-                Messenger.Default.Send(new StatusMessage("Service can't fetch extent values right now!", "Firebrick"));
+                
             }
 
             return data;
