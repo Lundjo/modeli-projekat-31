@@ -156,3 +156,72 @@
 29.01.2024. 21:09:59 : The Network Model Service is started.
 29.01.2024. 21:09:59 : Press <Enter> to stop the service.
 29.01.2024. 21:26:30 : The Network Model Service is closed.
+29.01.2024. 22:03:44 : Starting Network Model Serivice...
+29.01.2024. 22:03:44 : Inserting entity with GID (0000000100000001).
+29.01.2024. 22:03:44 : Inserting entity with GID (0000000300000001).
+29.01.2024. 22:03:44 : Inserting entity with GID (0000000200000001).
+29.01.2024. 22:03:44 : Inserting entity with GID (0000000200000002).
+29.01.2024. 22:03:44 : Inserting entity with GID (0000000400000001).
+29.01.2024. 22:03:44 : Inserting entity with GID (0000000400000002).
+29.01.2024. 22:03:44 : Inserting entity with GID (0000000500000001).
+29.01.2024. 22:03:44 : Inserting entity with GID (0000000600000001).
+29.01.2024. 22:03:44 : Inserting entity with GID (0000000600000002).
+29.01.2024. 22:03:44 : The WCF service GenericDataAccess is ready.
+29.01.2024. 22:03:44 : Endpoints:
+29.01.2024. 22:03:44 : net.tcp://localhost:10000/NetworkModelService/GDA/
+29.01.2024. 22:03:44 : Connection string: ../NetworkModelData.data
+29.01.2024. 22:03:44 : Trace level: Info
+29.01.2024. 22:03:44 : The Network Model Service is started.
+29.01.2024. 22:03:44 : Press <Enter> to stop the service.
+30.01.2024. 11:42:39 : Starting Network Model Serivice...
+30.01.2024. 11:42:39 : Inserting entity with GID (0000000100000001).
+30.01.2024. 11:42:39 : Inserting entity with GID (0000000300000001).
+30.01.2024. 11:42:39 : Inserting entity with GID (0000000200000001).
+30.01.2024. 11:42:39 : Inserting entity with GID (0000000200000002).
+30.01.2024. 11:42:39 : Inserting entity with GID (0000000400000001).
+30.01.2024. 11:42:39 : Inserting entity with GID (0000000400000002).
+30.01.2024. 11:42:39 : Inserting entity with GID (0000000500000001).
+30.01.2024. 11:42:39 : Inserting entity with GID (0000000600000001).
+30.01.2024. 11:42:39 : Inserting entity with GID (0000000600000002).
+30.01.2024. 11:42:39 : The WCF service GenericDataAccess is ready.
+30.01.2024. 11:42:39 : Endpoints:
+30.01.2024. 11:42:39 : net.tcp://localhost:10000/NetworkModelService/GDA/
+30.01.2024. 11:42:39 : Connection string: ../NetworkModelData.data
+30.01.2024. 11:42:39 : Trace level: Info
+30.01.2024. 11:42:39 : The Network Model Service is started.
+30.01.2024. 11:42:39 : Press <Enter> to stop the service.
+30.01.2024. 11:42:44 : The Network Model Service is closed.
+30.01.2024. 11:43:12 : Starting Network Model Serivice...
+30.01.2024. 11:43:12 : Inserting entity with GID (0000000100000001).
+30.01.2024. 11:43:12 : Inserting entity with GID (0000000300000001).
+30.01.2024. 11:43:12 : Inserting entity with GID (0000000200000001).
+30.01.2024. 11:43:12 : Inserting entity with GID (0000000200000002).
+30.01.2024. 11:43:12 : Inserting entity with GID (0000000400000001).
+30.01.2024. 11:43:12 : Inserting entity with GID (0000000400000002).
+30.01.2024. 11:43:12 : Inserting entity with GID (0000000500000001).
+30.01.2024. 11:43:12 : Inserting entity with GID (0000000600000001).
+30.01.2024. 11:43:12 : Inserting entity with GID (0000000600000002).
+30.01.2024. 11:43:12 : The WCF service GenericDataAccess is ready.
+30.01.2024. 11:43:12 : Endpoints:
+30.01.2024. 11:43:12 : net.tcp://localhost:10000/NetworkModelService/GDA/
+30.01.2024. 11:43:12 : Connection string: ../NetworkModelData.data
+30.01.2024. 11:43:12 : Trace level: Info
+30.01.2024. 11:43:12 : The Network Model Service is started.
+30.01.2024. 11:43:12 : Press <Enter> to stop the service.
+30.01.2024. 11:44:00 : Starting Network Model Serivice...
+30.01.2024. 11:44:00 : Inserting entity with GID (0000000100000001).
+30.01.2024. 11:44:00 : Inserting entity with GID (0000000300000001).
+30.01.2024. 11:44:00 : Inserting entity with GID (0000000200000001).
+30.01.2024. 11:44:00 : Inserting entity with GID (0000000200000002).
+30.01.2024. 11:44:00 : Inserting entity with GID (0000000400000001).
+30.01.2024. 11:44:00 : Inserting entity with GID (0000000400000002).
+30.01.2024. 11:44:00 : Inserting entity with GID (0000000500000001).
+30.01.2024. 11:44:00 : Inserting entity with GID (0000000600000001).
+30.01.2024. 11:44:00 : Inserting entity with GID (0000000600000002).
+30.01.2024. 11:44:00 : The WCF service GenericDataAccess is ready.
+30.01.2024. 11:44:00 : Endpoints:
+30.01.2024. 11:44:00 : net.tcp://localhost:10000/NetworkModelService/GDA/
+30.01.2024. 11:44:00 : Connection string: ../NetworkModelData.data
+30.01.2024. 11:44:00 : Trace level: Info
+30.01.2024. 11:44:00 : The Network Model Service is started.
+30.01.2024. 11:44:00 : Press <Enter> to stop the service.

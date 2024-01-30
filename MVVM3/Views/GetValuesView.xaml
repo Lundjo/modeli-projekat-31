@@ -19,7 +19,7 @@
         </Grid.ColumnDefinitions>
 
         <!-- Left Column -->
-        <Border BorderBrush="SteelBlue" BorderThickness="1" CornerRadius="10"  Margin="10,0,30,0">
+        <Border BorderBrush="Black" BorderThickness="1"  Margin="10,0,30,0">
             <StackPanel Grid.Column="0"  Margin="10,0,10,0">
                 <Label Content="Get Values" FontSize="22" FontWeight="SemiBold" HorizontalAlignment="Center"/>
                 <Label Content="" FontSize="6" FontWeight="SemiBold" HorizontalAlignment="Left"/>
@@ -40,23 +40,22 @@
                 </ListView>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Button Content="   Clear Selected Props     " Command="{Binding ClearProperties}" Foreground="DarkGoldenrod" BorderBrush="DarkGoldenrod" BorderThickness="2" FontSize="14" FontWeight="SemiBold" Margin="0, 10, 0, 0"></Button>
-                    <Button Foreground="Firebrick" BorderBrush="Firebrick" BorderThickness="2" Content="    Reset All    " Command="{Binding ResetAll}" FontSize="14" FontWeight="SemiBold" Margin="10, 10, 0, 0"></Button>
+                    <Button Content="   Clear Selected     " Command="{Binding ClearProperties}" BorderThickness="2" FontSize="14" FontWeight="Bold" Margin="0, 10, 0, 0"></Button>
+                    <Button BorderThickness="2" Content="    Reset    " Command="{Binding ResetAll}" FontSize="14" FontWeight="Bold" Margin="10, 10, 0, 0"></Button>
                 </StackPanel>
 
-                <Button Foreground="SteelBlue" BorderBrush="SteelBlue" BorderThickness="2" Content="Get Values ~ Apply Criteria" Command="{Binding GetValuesCriteria}" FontSize="14" FontWeight="SemiBold" Margin="0, 10, 0, 0"></Button>
+                <Button BorderThickness="2" Content="Apply" Command="{Binding GetValuesCriteria}" FontSize="14" FontWeight="Bold" Margin="0, 10, 0, 0"></Button>
             </StackPanel>
         </Border>
 
         <!-- Right Column -->
         <Grid Grid.Column="1">
-            <Border BorderBrush="SteelBlue" BorderThickness="1" CornerRadius="10"  Margin="-15,0,10,0">
+            <Border BorderBrush="Black" BorderThickness="1"  Margin="-15,0,10,0">
                 <StackPanel Grid.Column="0"  Margin="10,0,10,0">
-                    <Label Content="Listing of available values for selected criteria" FontSize="22" FontWeight="SemiBold" HorizontalAlignment="Center"/>
                     <Label Content="" FontSize="6" FontWeight="SemiBold" HorizontalAlignment="Left"/>
                     
                     <!-- List View Data -->
-                    <DataGrid ItemsSource="{Binding ListedProperties}" AutoGenerateColumns="False" CanUserSortColumns="False" CanUserAddRows="False" CanUserResizeColumns="False" Style="{StaticResource CustomDataGridStyle}">
+                    <DataGrid ItemsSource="{Binding ListedProperties}" AutoGenerateColumns="False" CanUserSortColumns="False" CanUserAddRows="False" CanUserResizeColumns="False" >
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Model Code" Binding="{Binding ModelCode}" IsReadOnly="True" Width="250"/>
                             <DataGridTextColumn Header="Value" Binding="{Binding Value}" IsReadOnly="True"  Width="*"/>

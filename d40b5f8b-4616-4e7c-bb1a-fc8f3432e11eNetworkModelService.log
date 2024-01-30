@@ -1,0 +1,16 @@
+30.01.2024. 12:11:57 : Starting Network Model Serivice...
+30.01.2024. 12:11:57 : Inserting entity with GID (0000000100000001).
+30.01.2024. 12:11:57 : Inserting entity with GID (0000000300000001).
+30.01.2024. 12:11:57 : Inserting entity with GID (0000000200000001).
+30.01.2024. 12:11:57 : Inserting entity with GID (0000000200000002).
+30.01.2024. 12:11:57 : Inserting entity with GID (0000000400000001).
+30.01.2024. 12:11:57 : Inserting entity with GID (0000000400000002).
+30.01.2024. 12:11:57 : Inserting entity with GID (0000000500000001).
+30.01.2024. 12:11:57 : Inserting entity with GID (0000000600000001).
+30.01.2024. 12:11:57 : Inserting entity with GID (0000000600000002).
+30.01.2024. 12:11:58 : The communication object, System.ServiceModel.ServiceHost, cannot be used for communication because it is in the Faulted state.
+30.01.2024. 12:11:58 : NetworkModelService failed.
+30.01.2024. 12:11:58 :    at System.ServiceModel.Channels.CommunicationObject.Close(TimeSpan timeout)
+   at FTN.Services.NetworkModelService.NetworkModelService.CloseHosts() in C:\modeli\modeli-projekat-31\NetworkModelService\NetworkModelService.cs:line 96
+   at FTN.Services.NetworkModelService.NetworkModelService.Dispose() in C:\modeli\modeli-projekat-31\NetworkModelService\NetworkModelService.cs:line 34
+   at FTN.Services.NetworkModelService.Program.Main(String[] args) in C:\modeli\modeli-projekat-31\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\Program.cs:line 30

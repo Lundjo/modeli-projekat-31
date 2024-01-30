@@ -14,8 +14,7 @@
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}"
                                 BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="5">       
+                                BorderThickness="{TemplateBinding BorderThickness}">       
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
@@ -23,7 +22,7 @@
             </Setter>
         </Style>
 
-        <Style TargetType="DataGrid" x:Key="CustomDataGridStyle">
+        <!--<Style TargetType="DataGrid" x:Key="CustomDataGridStyle">
             <Setter Property="Background" Value="White"/>
             <Setter Property="BorderBrush" Value="LightCyan"/>
             <Setter Property="BorderThickness" Value="1"/>
@@ -69,7 +68,7 @@
                     </Style>
                 </Setter.Value>
             </Setter>
-        </Style>
+        </Style>-->
 
 
     </Application.Resources>
