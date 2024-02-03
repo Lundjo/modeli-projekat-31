@@ -10,3 +10,14 @@ C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csproj.Core
 C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csproj.CopyComplete
 C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.exe
 C:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.pdb
+D:\modeli\modeli-projekat-31\bin64\ModelLabsApp.exe.config
+D:\modeli\modeli-projekat-31\bin64\ModelLabsApp.exe
+D:\modeli\modeli-projekat-31\bin64\ModelLabsApp.pdb
+D:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csproj.AssemblyReference.cache
+D:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.ModelLabsAppForm.resources
+D:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.Properties.Resources.resources
+D:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csproj.GenerateResource.cache
+D:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csproj.CoreCompileInputs.cache
+D:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.csproj.CopyComplete
+D:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.exe
+D:\modeli\modeli-projekat-31\ModelLabsApp\obj\x64\Debug\ModelLabsApp.pdb

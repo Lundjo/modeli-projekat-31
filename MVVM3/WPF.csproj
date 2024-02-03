@@ -72,7 +72,6 @@
     <Compile Include="Commands\ImportApplyRemoveDataCommands.cs" />
     <Compile Include="Model\PropertiesView.cs" />
     <Compile Include="Model\PropertyView.cs" />
-    <Compile Include="Model\StatusMessage.cs" />
     <Compile Include="ViewModel\GetRelatedValuesViewModel.cs" />
     <Compile Include="ViewModel\GetValuesViewModel.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />

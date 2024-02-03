@@ -10,3 +10,15 @@ C:\modeli\modeli-projekat-31\CIMProfileCreator\obj\x64\Debug\CIMProfileCreator.c
 C:\modeli\modeli-projekat-31\CIMProfileCreator\obj\x64\Debug\CIMProfileCreator.csproj.CoreCompileInputs.cache
 C:\modeli\modeli-projekat-31\CIMProfileCreator\obj\x64\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.exe
 C:\modeli\modeli-projekat-31\CIMProfileCreator\obj\x64\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.pdb
+D:\modeli\modeli-projekat-31\bin64\Predefined\PredefinedClasses.xml
+D:\modeli\modeli-projekat-31\bin64\Predefined\PredefinedEnumerations.xml
+D:\modeli\modeli-projekat-31\bin64\Predefined\PredefinedPackages.xml
+D:\modeli\modeli-projekat-31\bin64\FTN.ESI.SIMES.CIM.CIMProfileCreator.exe
+D:\modeli\modeli-projekat-31\bin64\FTN.ESI.SIMES.CIM.CIMProfileCreator.pdb
+D:\modeli\modeli-projekat-31\CIMProfileCreator\obj\x64\Debug\CIMProfileCreator.csproj.AssemblyReference.cache
+D:\modeli\modeli-projekat-31\CIMProfileCreator\obj\x64\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.CIMProfileCreatorForm.resources
+D:\modeli\modeli-projekat-31\CIMProfileCreator\obj\x64\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.Properties.Resources.resources
+D:\modeli\modeli-projekat-31\CIMProfileCreator\obj\x64\Debug\CIMProfileCreator.csproj.GenerateResource.cache
+D:\modeli\modeli-projekat-31\CIMProfileCreator\obj\x64\Debug\CIMProfileCreator.csproj.CoreCompileInputs.cache
+D:\modeli\modeli-projekat-31\CIMProfileCreator\obj\x64\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.exe
+D:\modeli\modeli-projekat-31\CIMProfileCreator\obj\x64\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.pdb

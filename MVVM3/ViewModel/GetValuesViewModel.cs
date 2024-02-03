@@ -59,28 +59,15 @@ namespace MVVM3.ViewModel
             SelectedType = (DMSType)1;
             SelectedGid = -1;
             ListedProperties.Clear();
-            Messenger.Default.Send(new StatusMessage("Criteria has been resetted.", "SteelBlue"));
         }
 
         public void GetValuesFromNMSCriteria()
         {
-            if(SelectedType == DMSType.MASK_TYPE)
+            if(SelectedType == DMSType.MASK_TYPE || SelectedGid == -1 || SelectedModels.Count == 0)
             {
-                Messenger.Default.Send(new StatusMessage("You didn't choose a DMS type!", "Firebrick"));
-                return;
-            }
-            if(SelectedGid == -1)
-            {
-                Messenger.Default.Send(new StatusMessage("You didn't choose a Global ID!", "Firebrick"));
-                return;
-            }
-            if(SelectedModels.Count == 0)
-            {
-                Messenger.Default.Send(new StatusMessage("You must choose atleast one property!", "Firebrick"));
                 return;
             }
 
-            Messenger.Default.Send(new StatusMessage("Executing query. Please wait...", "SteelBlue"));
             ListedProperties = commands.GetValues(selectedGid, SelectedModels.ToList());
         }
 

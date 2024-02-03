@@ -48,7 +48,6 @@ namespace MVVM3.ViewModel
             switch (destination)
             {
                 case "home":
-                    Messenger.Default.Send(new StatusMessage("Welcome to GDA Client - All services are operating normally.", "SteelBlue"));
                     CurrentViewModel = homeViewModel;
                     break;
                 case "get":

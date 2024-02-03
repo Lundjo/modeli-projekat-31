@@ -316,3 +316,50 @@
 3.2.2024. 13:57:07 : Inserting entity with GID (0000000600000002).
 3.2.2024. 13:57:07 : Applying delta to network model successfully finished.
 3.2.2024. 14:00:25 : The Network Model Service is closed.
+3.2.2024. 18:22:34 : Starting Network Model Serivice...
+3.2.2024. 18:22:34 : Inserting entity with GID (0000000100000001).
+3.2.2024. 18:22:34 : Inserting entity with GID (0000000300000001).
+3.2.2024. 18:22:34 : Inserting entity with GID (0000000200000001).
+3.2.2024. 18:22:34 : Inserting entity with GID (0000000200000002).
+3.2.2024. 18:22:34 : Inserting entity with GID (0000000400000001).
+3.2.2024. 18:22:34 : Inserting entity with GID (0000000400000002).
+3.2.2024. 18:22:34 : Inserting entity with GID (0000000500000001).
+3.2.2024. 18:22:34 : Inserting entity with GID (0000000600000001).
+3.2.2024. 18:22:34 : Inserting entity with GID (0000000600000002).
+3.2.2024. 18:22:34 : The WCF service GenericDataAccess is ready.
+3.2.2024. 18:22:34 : Endpoints:
+3.2.2024. 18:22:34 : net.tcp://localhost:10000/NetworkModelService/GDA/
+3.2.2024. 18:22:34 : Connection string: ../NetworkModelData.data
+3.2.2024. 18:22:34 : Trace level: Info
+3.2.2024. 18:22:34 : The Network Model Service is started.
+3.2.2024. 18:22:34 : Press <Enter> to stop the service.
+3.2.2024. 18:23:06 : Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000100000001).
+3.2.2024. 18:23:06 : Collecting ResourceDescriptions failed. Exception: Failed to get values for entity with GID = 0x0000000100000001. Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000100000001).
+3.2.2024. 18:23:06 : Failed to get next set of ResourceDescription iterators. Failed to get values for entity with GID = 0x0000000100000001. Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000100000001).
+3.2.2024. 18:23:06 : IteratorNext failed. Iterator ID = 8. Resources to fetch count = 2. Failed to get next set of ResourceDescription iterators. Failed to get values for entity with GID = 0x0000000100000001. Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000100000001). 
+3.2.2024. 18:23:10 : Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000300000001).
+3.2.2024. 18:23:10 : Collecting ResourceDescriptions failed. Exception: Failed to get values for entity with GID = 0x0000000300000001. Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000300000001).
+3.2.2024. 18:23:10 : Failed to get next set of ResourceDescription iterators. Failed to get values for entity with GID = 0x0000000300000001. Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000300000001).
+3.2.2024. 18:23:10 : IteratorNext failed. Iterator ID = 9. Resources to fetch count = 2. Failed to get next set of ResourceDescription iterators. Failed to get values for entity with GID = 0x0000000300000001. Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000300000001). 
+3.2.2024. 18:23:16 : Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000300000001).
+3.2.2024. 18:23:16 : Collecting ResourceDescriptions failed. Exception: Failed to get values for entity with GID = 0x0000000300000001. Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000300000001).
+3.2.2024. 18:23:16 : Failed to get next set of ResourceDescription iterators. Failed to get values for entity with GID = 0x0000000300000001. Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000300000001).
+3.2.2024. 18:23:16 : IteratorNext failed. Iterator ID = 10. Resources to fetch count = 2. Failed to get next set of ResourceDescription iterators. Failed to get values for entity with GID = 0x0000000300000001. Unknown property id = TERMINAL_CNODE for entity (GID = 0x0000000300000001). 
+3.2.2024. 19:35:43 : Starting Network Model Serivice...
+3.2.2024. 19:35:43 : Inserting entity with GID (0000000100000001).
+3.2.2024. 19:35:43 : Inserting entity with GID (0000000300000001).
+3.2.2024. 19:35:43 : Inserting entity with GID (0000000200000001).
+3.2.2024. 19:35:43 : Inserting entity with GID (0000000200000002).
+3.2.2024. 19:35:43 : Inserting entity with GID (0000000400000001).
+3.2.2024. 19:35:43 : Inserting entity with GID (0000000400000002).
+3.2.2024. 19:35:43 : Inserting entity with GID (0000000500000001).
+3.2.2024. 19:35:43 : Inserting entity with GID (0000000600000001).
+3.2.2024. 19:35:43 : Inserting entity with GID (0000000600000002).
+3.2.2024. 19:35:43 : The WCF service GenericDataAccess is ready.
+3.2.2024. 19:35:43 : Endpoints:
+3.2.2024. 19:35:43 : net.tcp://localhost:10000/NetworkModelService/GDA/
+3.2.2024. 19:35:43 : Connection string: ../NetworkModelData.data
+3.2.2024. 19:35:43 : Trace level: Info
+3.2.2024. 19:35:43 : The Network Model Service is started.
+3.2.2024. 19:35:43 : Press <Enter> to stop the service.
+3.2.2024. 19:35:59 : The Network Model Service is closed.

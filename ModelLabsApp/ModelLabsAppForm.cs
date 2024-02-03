@@ -60,7 +60,6 @@ namespace ModelLabsApp
 			{
                 if (textBoxCIMFile.Text == string.Empty)
                 {
-                    MessageBox.Show("Must enter CIM/XML file.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
@@ -84,7 +83,7 @@ namespace ModelLabsApp
 			}
 			catch (Exception e)
 			{
-				MessageBox.Show(string.Format("An error occurred.\n\n{0}", e.Message), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				
 			}
 
 			buttonApplyDelta.Enabled = (nmsDelta != null);

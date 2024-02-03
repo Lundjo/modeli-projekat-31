@@ -90,7 +90,7 @@ namespace MVVM3.Commands
                                 data.Add(new PropertyView(Properties[i].Id, Properties[i].AsLong().ToString()));
                             break;
                         case PropertyType.Bool:
-                            data.Add(new PropertyView(Properties[i].Id, Properties[i].AsBool() ? "✓" : "X"));
+                            data.Add(new PropertyView(Properties[i].Id, Properties[i].AsBool() ? "True" : "False"));
                             break;
                         case PropertyType.DateTime:
                                 data.Add(new PropertyView(Properties[i].Id, Properties[i].AsDateTime().ToString()));

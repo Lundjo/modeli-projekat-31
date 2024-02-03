@@ -18,3 +18,11 @@ C:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debu
 C:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.csproj.CopyComplete
 C:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.exe
 C:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.pdb
+D:\modeli\modeli-projekat-31\bin64\NMSTestClient.exe.config
+D:\modeli\modeli-projekat-31\bin64\NMSTestClient.exe
+D:\modeli\modeli-projekat-31\bin64\NMSTestClient.pdb
+D:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.csproj.AssemblyReference.cache
+D:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.csproj.CoreCompileInputs.cache
+D:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.csproj.CopyComplete
+D:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.exe
+D:\modeli\modeli-projekat-31\NetworkModelService\Test\NMSTestClient\obj\x64\Debug\NMSTestClient.pdb
