@@ -30,3 +30,10 @@ C:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\DataMod
 C:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\DataModel.csproj.CopyComplete
 C:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\FTN.DataModel.dll
 C:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\FTN.DataModel.pdb
+D:\modeli\modeli-projekat-31\bin64\FTN.DataModel.dll
+D:\modeli\modeli-projekat-31\bin64\FTN.DataModel.pdb
+D:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\DataModel.csproj.AssemblyReference.cache
+D:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\DataModel.csproj.CoreCompileInputs.cache
+D:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\DataModel.csproj.CopyComplete
+D:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\FTN.DataModel.dll
+D:\modeli\modeli-projekat-31\NetworkModelService\DataModel\obj\x64\Debug\FTN.DataModel.pdb

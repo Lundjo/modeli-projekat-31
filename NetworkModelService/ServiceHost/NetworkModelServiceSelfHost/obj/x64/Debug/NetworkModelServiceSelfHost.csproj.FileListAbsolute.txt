@@ -27,3 +27,11 @@ C:\modeli\modeli-projekat-31\NetworkModelService\ServiceHost\NetworkModelService
 C:\modeli\modeli-projekat-31\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\obj\x64\Debug\NetworkModelServiceSelfHost.csproj.CopyComplete
 C:\modeli\modeli-projekat-31\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\obj\x64\Debug\FTN_NetworkModelService.exe
 C:\modeli\modeli-projekat-31\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\obj\x64\Debug\FTN_NetworkModelService.pdb
+D:\modeli\modeli-projekat-31\bin64\FTN_NetworkModelService.exe.config
+D:\modeli\modeli-projekat-31\bin64\FTN_NetworkModelService.exe
+D:\modeli\modeli-projekat-31\bin64\FTN_NetworkModelService.pdb
+D:\modeli\modeli-projekat-31\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\obj\x64\Debug\NetworkModelServiceSelfHost.csproj.AssemblyReference.cache
+D:\modeli\modeli-projekat-31\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\obj\x64\Debug\NetworkModelServiceSelfHost.csproj.CoreCompileInputs.cache
+D:\modeli\modeli-projekat-31\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\obj\x64\Debug\NetworkModelServiceSelfHost.csproj.CopyComplete
+D:\modeli\modeli-projekat-31\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\obj\x64\Debug\FTN_NetworkModelService.exe
+D:\modeli\modeli-projekat-31\NetworkModelService\ServiceHost\NetworkModelServiceSelfHost\obj\x64\Debug\FTN_NetworkModelService.pdb
